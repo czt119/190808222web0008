@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		   
+		    form{
+						width: 500px;
+						height: 800px;
+						margin: 10px auto;
+						background-color: #515151;
+						padding: 30px 40px;
+						color: #FFF;
+						
+					}
+			h2{text-align: center;}
+			.fieldset {color: #FFF;
+			          margin-bottom: 20px;}
+			[type = "text"],[type = "password"]{
+							width: 130px;
+							height: 30px;
+							border: 1px solid #ccc;
+							font-size: 16px;
+							}
+			[type="long"]{
+				           width: 370px;
+				           height: 30px;
+				           border: 1px solid #ccc;
+				           font-size: 16px;
+			}
+			[type="short"]{
+				           width: 50px;
+				           height: 30px;
+				           border: 1px solid #ccc;
+				           font-size: 16px;
+			}
+			[type="submit"]{
+				           text-align: center;
+				          
+			}
+			.box{text-align: center;}
+			.long{width:200px;
+			      height: 30px;}
+			table{
+				width: 450px;
+			}
+			td{height: 50px;}
+		</style>
+	</head>
+	<body>
+	  
+	  <form>
+	   <h2>增加快递信息</h2>
+		<fieldset class="fieldset">
+			<legend>发货单</legend>
+			<table>
+			<tbody>
+				<tr>
+				<td>发件人: </td>
+				<td><input type="text" name="user"></td>
+				<td>地址：</td>
+				<td><input type="text" name="user"></td>
+				</tr>
+				
+				<tr>
+				<td>电话: </td>
+				<td><input type="text" name="user"></td>
+				<td>邮编：</td>
+				<td><input type="text" name="user"></td>
+				</tr>
+			</tbody>
+			</table>
+		</fieldset>
+		<fieldset class="fieldset">
+			<legend>收货单</legend>
+			<table>
+			<tbody>
+				<tr>
+				<td>发件人: </td>
+				<td><input type="text" name="user"></td>
+				<td>地址：</td>
+				<td><input type="text" name="user"></td>
+				</tr>
+				
+				<tr>
+				<td>电话: </td>
+				<td><input type="text" name="user"></td>
+				<td>邮编：</td>
+				<td><input type="text" name="user"></td>
+				</tr>
+				<tr>
+				<td>地区: </td>
+				<td colspan="3">
+				   
+					<select class="long">
+					  <option value="bj" selected>北京<option>
+					  <option value="tj" >天津<option>
+                      <option value="zs" >江苏<option>
+            		  <option value="zj" >浙江<option>
+                      <option value="yn" >云南<option>
+                   </select>
+                </td>
+				</tr>
+				<tr>
+					<td>包装：</td>
+					<td colspan="3"><input type="radio" name="check" value="aa">纸箱<input type="radio" name="check" value="aa">木箱<input type="radio" name="check" value="aa">快递袋<input type="radio" name="check" value="aa">其他</td>
+					
+					
+				</tr>
+                <tr>
+	            <td>付款方式：</td>
+	            <td colspan="3"><input type="radio" name="check" value="aa">现金<input type="radio" name="check" value="aa">支付宝<input type="radio" name="check" value="aa">网银<input type="radio" name="check" value="aa">ATM</td>
+	
+	
+</tr>
+
+			</tbody>
+			</table>
+		</fieldset>
+		<fieldset class="fieldset">
+			<legend>货物信息</legend>
+			<table>
+			<tbody>
+				<tr>
+				<td>发件人: </td>
+				<td colspan="5"><input type="long" name="user"></td>
+				
+				</tr>
+				
+				<tr>
+				<td>数量: </td>
+				<td><input type="short" name="user"></td>
+				<td>重量：</td>
+				<td><input type="short" name="user"></td>
+				<td>发货时间：</td>
+				<td><input type="text" name="user"></td>
+				</tr>
+			</tbody>
+			</table>
+		</fieldset>
+		<div class="box">
+		<input type="submit" name="asd" value="确定">
+		<input type="submit" name="asd" value="取消">
+		</div>
+		</form>
+	  
+	</body>
+</html>
